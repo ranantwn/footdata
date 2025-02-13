@@ -169,5 +169,12 @@ footdata <- function(dataset_code, base_dir) {
 
   # --- Save Final Merged Output ---
   fwrite(dataset_with_footnotes, output_path, bom = TRUE)
+  # Reorder columns: values, flags, then the rest
+column_order <- c(
+  setdiff(names(dataset_with_footnotes), c("values", "flags")),
+  "values",
+  "flags"
+)
+dataset_with_footnotes <- dataset_with_footnotes[, column_order, with = FALSE]
   cat("Merging completed successfully! Output saved at:", output_path, "\n")
 }
