@@ -1,0 +1,7 @@
+exportPattern("^[[:alpha:]]+")
+
+# Import specific functions from the eurostat package
+importFrom(eurostat, get_eurostat)
+
+# Import read_excel from the readxl package
+importFrom(readxl, read_excel)

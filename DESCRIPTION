@@ -1,0 +1,15 @@
+Package: footdata
+Type: Package
+Title: Load, Process, and Merge Datasets with Footnotes
+Version: 0.1.0
+Author: Rania Antonopoulou [aut] (<ran.antonopoulou@gmail.com>)
+Maintainer: Rania Antonopoulou <ran.antonopoulou@gmail.com>
+Description: The 'footdata' package streamlines handling datasets with footnotes. 
+            It enables loading datasets, merging footnotes, and exporting the final annotated dataset to a local folder. 
+            Key features include footnote detection, preservation, and alignment during data processing, simplifying workflows for researchers and analysts.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports:
+    readxl
+RoxygenNote: 7.2.3
