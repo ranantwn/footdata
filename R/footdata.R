@@ -144,7 +144,7 @@ footdata <- function(dataset_code, base_dir) {
   }
 
   matching_columns <- intersect(names(dataset_csv_processed), names(footnotes_processed))
-  matching_columns <- setdiff(matching_columns, c("Comment", "flags", "values"))
+  matching_columns <- setdiff(matching_columns, c("Comment", "values", "flags"))
 
   dataset_with_footnotes <- left_join(dataset_csv_processed, footnotes_processed, by = matching_columns)
 
